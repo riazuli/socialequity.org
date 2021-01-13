@@ -1,0 +1,284 @@
+/* Basic css */
+@font-face {
+  font-family: "Azo Sans", sans-serif;
+  src: url("../webfonts/AzoSans-Bold.eot");
+  src: url("../webfonts/AzoSans-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../webfonts/AzoSans-Bold.woff2") format("woff2"),
+    url("../webfonts/AzoSans-Bold.woff") format("woff"),
+    url("../webfonts/AzoSans-Bold.ttf") format("truetype"),
+    url("../webfonts/AzoSans-Bold.svg#AzoSans-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Azo Sans", sans-serif;
+  src: url("../webfonts/AzoSans-BoldItalic.eot");
+  src: url("../webfonts/AzoSans-BoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../webfonts/AzoSans-BoldItalic.woff2") format("woff2"),
+    url("../webfonts/AzoSans-BoldItalic.woff") format("woff"),
+    url("../webfonts/AzoSans-BoldItalic.ttf") format("truetype"),
+    url("../webfonts/AzoSans-BoldItalic.svg#AzoSans-BoldItalic") format("svg");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Azo Sans", sans-serif;
+  src: url("../webfonts/AzoSans-Italic.eot");
+  src: url("../webfonts/AzoSans-Italic.eot?#iefix") format("embedded-opentype"),
+    url("../webfonts/AzoSans-Italic.woff2") format("woff2"),
+    url("../webfonts/AzoSans-Italic.woff") format("woff"),
+    url("../webfonts/AzoSans-Italic.ttf") format("truetype"),
+    url("../webfonts/AzoSans-Italic.svg#AzoSans-Italic") format("svg");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Azo Sans", sans-serif;
+  src: url("../webfonts/AzoSans-Regular.eot");
+  src: url("../webfonts/AzoSans-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../webfonts/AzoSans-Regular.woff2") format("woff2"),
+    url("../webfonts/AzoSans-Regular.woff") format("woff"),
+    url("../webfonts/AzoSans-Regular.ttf") format("truetype"),
+    url("../webfonts/AzoSans-Regular.svg#AzoSans-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #1d1d1b;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Azo Sans", sans-serif;
+  font-weight: bold;
+  margin: 0 0 15px;
+  line-height: 1.2;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+a:focus,
+input:focus,
+select:focus,
+button:focus {
+  outline: 0 solid;
+}
+
+/* Main styles */
+
+.header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+.header .navbar-brand img {
+  max-width: 60px;
+}
+.header .navbar-toggler-icon {
+  color: #fff;
+}
+
+.header .navbar-nav .nav-item .nav-link {
+  color: #fff;
+  font-family: "Azo Sans", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  transition: 0.4s ease;
+  padding: 10px 15px;
+}
+
+.header .navbar-nav .nav-item .nav-link.tp-btn {
+  padding: 10px 20px;
+  position: relative;
+}
+
+.btn-group {
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+.header .navbar-nav .nav-item .nav-link.tp-btn:first-of-type:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  height: 15px;
+  width: 1px;
+  background-color: #fff;
+  transform: translateY(-50%);
+}
+
+.header .navbar-nav .nav-item .nav-link.white-btn,
+.white-btn {
+  background-color: #fff;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-left: 15px;
+  display: inline-block;
+}
+
+.header .navbar-nav .nav-item .nav-link.white-btn img,
+.white-btn img {
+  margin-left: 10px;
+}
+
+.header .navbar-nav .nav-item .nav-link:hover {
+  opacity: 0.9;
+}
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  vertical-align: bottom;
+  padding: 100px 0px 50px;
+  background: #000;
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+.hero-text {
+  color: #fff;
+}
+
+.hero-text .logo img {
+  max-width: 300px;
+  margin-bottom: 30px;
+}
+
+.hero-text .title {
+  font-size: 60px;
+}
+
+.hero-right {
+  text-align: right;
+  color: #fff;
+}
+
+.hero-right .white-btn {
+  font-size: 24px;
+  font-weight: bold;
+  position: relative;
+  text-align: center;
+  min-width: 350px;
+  margin-bottom: 25px;
+  transition: all 0.4s ease;
+}
+
+.hero-right .white-btn:after {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #fff;
+  content: "";
+  border-radius: 5px;
+}
+
+.hero-right .white-btn:hover {
+  color: #000;
+  opacity: 0.95;
+}
+
+.share-text img {
+  margin-right: 10px;
+}
+
+.share-text {
+  max-width: 350px;
+  margin-left: auto;
+  text-align: center;
+}
+
+.footer {
+  background: #141414;
+  color: #fff;
+}
+
+.footer-top {
+  padding: 150px 0px;
+  margin-top: -2px;
+}
+
+.bolder {
+  font-weight: bold;
+}
+
+.footer-logo img {
+  max-width: 200px;
+}
+
+.footer-logo {
+  padding-bottom: 30px;
+}
+
+.opacity {
+  opacity: 0.6;
+}
+
+.widget-title {
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.bolder.info {
+  margin-bottom: 4px;
+}
+
+.social-links a {
+  color: #fff;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  transition: 0.4s ease;
+}
+
+.social-links a:hover {
+  opacity: 0.9;
+}
+
+.footer-bottom {
+  padding: 30px 0px;
+  text-align: right;
+  font-size: 14px;
+}
+
+.bolder.bigger {
+  font-size: 18px;
+}

@@ -1,0 +1,105 @@
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 1900px) {
+}
+
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+}
+
+/* Tablet Layout: 768px. */
+@media only screen and (max-width: 991px) {
+  .header .navbar-collapse {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+  }
+
+  .btn-group {
+    width: auto;
+  }
+
+  .header .navbar-nav .nav-item .nav-link.white-btn,
+  .white-btn {
+    margin-left: 0px;
+    margin-top: 15px;
+  }
+
+  .hero-right {
+    text-align: left;
+  }
+
+  .share-text {
+    margin-left: 0px;
+  }
+
+  .header .navbar-nav .nav-item.btn-group {
+    justify-content: center;
+    display: inline-flex;
+  }
+
+  .header .navbar-nav .nav-item.btn-group .nav-link {
+    display: inline-block;
+  }
+
+  .footer-top .text-center {
+    text-align: left !important;
+  }
+
+  .social-links a {
+    text-align: left;
+    display: inline-block;
+  }
+
+  .widget-title {
+    margin-bottom: 15px;
+    margin-top: 50px;
+  }
+
+  .footer-top {
+    padding: 100px 0px;
+  }
+
+  .footer-bottom {
+    text-align: center;
+  }
+  .navbar {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+  .hero-text .logo img {
+    max-width: 150px;
+  }
+
+  .hero {
+    padding-top: 150px;
+  }
+
+  .hero-text .title {
+    font-size: 30px;
+  }
+
+  br {
+    content: "";
+    display: inline;
+  }
+
+  .header .navbar-brand img {
+    max-width: 45px;
+  }
+
+  .hero-right .white-btn {
+    min-width: auto;
+    font-size: 18px;
+  }
+
+  .share-text img {
+    max-width: 90px;
+  }
+
+  .share-text {
+    text-align: left;
+  }
+}
